@@ -1,1 +1,0 @@
-# board-zerynth-sparkfun_photon
