@@ -1,9 +1,9 @@
 {
     "dependencies": {
-        "lib.broadcom.bcm43362": "r2.1.1",
-        "sys.zerynth.armgcc": "r2.1.1",
-        "sys.zerynth.dfu": "r2.1.1",
-        "vhal.zerynth.armcmx_stm32f2": "r2.1.1"
+        "lib.broadcom.bcm43362": "r2.1.2",
+        "sys.zerynth.armgcc": "r2.1.2",
+        "sys.zerynth.dfu": "r2.1.2",
+        "vhal.zerynth.armcmx_stm32f2": "r2.1.2"
     },
     "description": "Add support for SparkFun Photon",
     "fullname": "board.zerynth.sparkfun_photon",
@@ -21,6 +21,6 @@
     ],
     "repo": "official",
     "title": "SparkFun Photon RedBoard Support Package",
-    "version": "r2.1.1",
+    "version": "r2.1.2",
     "whatsnew": " "
 }
