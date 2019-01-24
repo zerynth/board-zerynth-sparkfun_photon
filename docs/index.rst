@@ -141,4 +141,28 @@ After virtualization, the SparkFun Photon is ready to be programmed and the  Zer
 
 .. important:: To exploit the Wi-Fi chip functionalities of the SparkFun Photon, the :ref:`lib.broadcom.bcm43362 library <broadcom_bcm43362>` must be installed and imported on the Zerynth script.
 
+Firmware Over the Air update (FOTA)
+***********************************
 
+The Firmware Over the Air feature allows to update the device firmware at runtime. Zerynth FOTA in the SparkFun Photon device is available for bytecode.
+
+Flash Layout is shown in table below:
+
+=============  =======  =================
+Start address  Size     Content
+=============  =======  =================
+  0x08020000     128Kb  VM Slot 0
+  0x08040000     384kb  Bytecode Slot 0
+  0x080A0000     384kb  Bytecode Slot 1
+=============  =======  =================
+
+.. important:: FOTA Record (small segment of memory where the current and desired state of the firmware is store) for the SparkFun Photon device is allocated in 16kb DCT1 (see Flash Layout) sector at 0x08006000 address.
+
+Power Management and Secure Firmware
+************************************
+
+Power Management feature allows to optimize power consumption by putting the device in low consumption state.
+
+Secure Firmware feature allows to detect and recover from malfunctions and, when supported, to protect the running firmware (e.g. disabling the external access to flash or assigning protected RAM memory to critical parts of the system).
+
+Both these features are strongly platform dependent; more information at :ref:`Power Management - STM32F section <pwr-stm32f>` and :ref:`Secure Firmware - STM32F section <sfw-stm32f>`.
