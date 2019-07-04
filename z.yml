@@ -1,0 +1,14 @@
+---
+description: Add support for SparkFun Photon
+fullname: board.zerynth.sparkfun_photon
+info:
+    board: Sparkfun Photon RedBoard
+    chip_manufacturer: ST Microelectronics
+    device: stm32f205
+    family_type: ARM Cortex M3
+keywords:
+- sparkfun
+- board
+- wifi
+title: SparkFun Photon RedBoard Support Package
+...
