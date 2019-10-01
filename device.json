@@ -18,7 +18,7 @@
     "architecture": "cortex-m3",
     "gccopts": {
         "arch": [
-            "cortex-m3",
+            "-mcpu=cortex-m3",
             "-mthumb"
         ],
         "cflags": [
